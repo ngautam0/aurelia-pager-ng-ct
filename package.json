@@ -28,18 +28,12 @@
   },
   "jspm": {
     "registry": "npm",
-    "jspmPackage": true,
     "main": "aurelia-pager",
     "format": "amd",
     "directories": {
       "dist": "dist/amd"
     },
     "dependencies": {
-      "aurelia-binding": "^1.0.0-rc.1.0.0",
-      "aurelia-templating": "^1.0.0-rc.1.0.0",
-      "aurelia-view-manager": "^0.0.7"
-    },
-    "peerDependencies": {
       "aurelia-binding": "^1.0.0-rc.1.0.0",
       "aurelia-templating": "^1.0.0-rc.1.0.0",
       "aurelia-view-manager": "^0.0.7"

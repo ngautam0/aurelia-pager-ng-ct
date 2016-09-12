@@ -1,15 +1,17 @@
 <template>
+  <small>Page ${page} of ${pages}</small>
+
   <nav>
     <ul class="pagination">
 
       <!-- first page -->
-      <li class.bind="page <= 1 ? 'disabled': ''">
+      <!-- <li class.bind="page <= 1 ? 'disabled': ''">
         <a click.delegate="firstPage()">&#171;</a>
-      </li>
+      </li> -->
 
       <!-- previous page -->
       <li class="${page <= 1 ? 'disabled': ''}">
-        <a click.delegate="prevPage()">&#8249;</a>
+        <a click.delegate="prevPage()"><span class="icon-chevron-left"></span></a>
       </li>
 
       <!-- pages -->
@@ -19,13 +21,15 @@
 
       <!-- next -->
       <li class.bind="page >= pages ? 'disabled': ''">
-        <a click.delegate="nextPage()">&#8250;</a>
+        <a click.delegate="nextPage()"><span class="icon-chevron-right"></a>
       </li>
 
       <!-- last page -->
-      <li class.bind="page === pages ? 'disabled': ''">
+      <!-- <li class.bind="page === pages ? 'disabled': ''">
         <a click.delegate="lastPage()">&#187;</a>
-      </li>
+      </li> -->
     </ul>
   </nav>
+
+
 </template>
